@@ -9,8 +9,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <title>My Awesome Cart</title>
+    
+    <!-- script for time -->
+    <script>
+        let a;
+        let date;
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+            a = new Date(); 
+            date = a.toLocaleDateString(undefined, options);
+            time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+            document.getElementById('time').innerHTML = time + "<br>on " + date;
+        }, 1000);
+    </script>
+    
   </head>
   <body>
+ 
+    
+    <!-- added a time displaying facility-->   
+    <div class="container my-4">
+        <div class="jumbotron">
+            <h1 class="display-4">Current time Is: <span id="time"></span></h1>
+            <p class="lead">We have got you covered. This is a simple hero unit, a simple jumbotron-style component for
+                calling extra attention to featured content or information.</p>
+            <hr class="my-4">
+            <p>We are here to show you the current time</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Browse Times</a>
+        </div>
+    </div>
+  
    
     <div class="jumbotron">
   <h1 class="display-4">My Awesome Cart</h1>
