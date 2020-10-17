@@ -1,0 +1,34 @@
+@media (min-width: 550px) {
+  .container1 {
+    display: flex;
+  }
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.container1 div {
+  border: 1px solid rgb(255, 54, 54);
+  margin: 5px 0px;
+  padding: 10px;
+}
+.container2 div {
+  border: 1px solid rgb(104, 159, 241);
+  padding: 10px;
+}
+.box1 {
+  flex: 2;
+  order: 2;
+}
+.box2 {
+  flex: 1;
+  order: 1;
+}
+.box3 {
+  flex: 1;
+  order: 3;
+}
+.box4 {
+  width: 28%;
+}
